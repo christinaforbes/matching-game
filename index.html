@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Christina Forbes 11/30/2021 -->
+<html lang="en">
+  <head>
+    <title>Periodic Table of Elements Matching Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="page-container">
+    <header>
+      <h1 class="page-heading">Periodic Table of Elements Matching Game</h1>
+    </header>
+
+    <main>
+      <div class="cards-container"></div>
+
+      <div class="modal-container">
+        <div class="modal-content-container">
+          <div>
+            <h2 class="modal-heading">How to Play</h2>
+            <ol class="start-screen-instructions">
+              <li>Each card has a front and a back. The front contains an element's symbol and name, while the back is a solid color. All cards are displayed face down by default.</li>
+              <li>Click/tap a card to select it. The card will be flipped to reveal the front. Click/tap another card to check for a match.</li>
+              <li>If the cards are a match, then they'll be hidden from view. If the cards aren't a match, then they'll be flipped face down again.</li>
+              <li>Continue selecting cards until no cards remain onscreen. When all the cards have been hidden, you've won the game.</li>
+            </ol>
+          </div>
+          <div class="button-centered">
+            <button type="button" class="button start-button">Start Game</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-container end-screen">
+        <div class="modal-content-container">
+          <div>
+            <h2 class="modal-heading">Congratulations!</h2>
+            <p>You completed the game in <span class="score"></span> moves!</p>
+            <p>Your best score is <span class="best-score"></span> moves!</p>
+          </div>
+          <div class="button-centered">
+            <button type="button" class="button start-button">New Game</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
